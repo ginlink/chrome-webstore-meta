@@ -1,4 +1,7 @@
 {
+  "name": "@ginlink/chrome-webstore-meta",
+  "author": "ginlink",
+  "module": "dist/chrome-webstore-meta.esm.js",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -16,16 +19,32 @@
     "test": "tsdx test",
     "end2end": "node ./test/end2end.js",
     "prepare": "tsdx build",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
+  "publishConfig": {
+    "access": "public"
   },
-  "name": "chrome-webstore-meta1",
-  "author": "ginlink",
-  "module": "dist/chrome-webstore-meta1.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ginlink/chrome-webstore-meta.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "webextension",
+    "web-store",
+    "webstore",
+    "chrome-app",
+    "chrome-extension",
+    "chrome-theme",
+    "chrome-web-store",
+    "itemprop",
+    "meta"
+  ],
+  "bugs": {
+    "url": "https://github.com/ginlink/chrome-webstore-meta/issues"
+  },
+  "homepage": "https://github.com/ginlink/chrome-webstore-meta#readme",
   "devDependencies": {
     "@types/htmlparser2": "^3.10.7",
     "@typescript-eslint/eslint-plugin": "^6",
